@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<title>Grady Browser</title>
+		<meta
+			name="description"
+			content="Grady Browser"
+		/>
+		<meta
+			name="keywords"
+			content=""
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="#434c5e"
+		/>
+		<meta name="googlebot" content="index, follow, snippet" />
+		<link rel="shortcut icon" content="favicon.ico" />
+		<link rel="stylesheet" href="index.css" />
+		
+
+		<script src="baremux/index.js"></script>
+		<script src="uv/uv.bundle.js"></script>
+		<script src="uv/uv.config.js"></script>
+
+
+	</head>
+
+	<body>
+		<div
+			title="Grady Browser Logo"
+			class="flex-center logo-wrapper header-center"
+		>
+			<img class="logo" src="uv.png" alt="Grady Browser" />
+			<h1>Grady Browser</h1>
+		</div>
+
+		<form id="uv-form" class="flex-center">
+			<input
+				id="uv-search-engine"
+				value="https://www.google.com/search?q=%s"
+				type="hidden"
+			/>
+			<input id="uv-address" type="text" placeholder="Search the web freely" />
+		</form>
+		<div class="desc left-margin">
+			<p id="uv-error"></p>
+			<pre id="uv-error-code"></pre>
+		</div>
+		<footer>
+		</footer>
+		<iframe style="display: none" id="uv-frame"></iframe>
+		<script src="register-sw.js"></script>
+		<script src="search.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
